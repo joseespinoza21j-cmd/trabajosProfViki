@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body { font-family: system-ui, sans-serif; padding: 1.5rem; background: #1a1a2e; color: #eee; }
+        a.volver { display: inline-block; margin-bottom: 1rem; padding: 0.4rem 1rem; background: #ff6b6b; color: #fff; border-radius: 999px; text-decoration: none; font-weight: 600; }
+        a.volver:hover { background: #ee5a5a; }
+    </style>
 </head>
 <body>
+    <a class="volver" href="index.html">← Volver al inicio</a>
+
+    
+    <h1>suma</h1>
     <script>
-        let N1=Number(prompt('Introduce el primer numero'));
-        let N2=Number(prompt('Introduce el segundo numero'));
-        suma=N1+N2;
-        resta=N1-N2;
-        multi=N1*N2;
-        division=N1/N2;
-        alert("La suma es: " + suma + 
-            "\nLa resta es: " + resta + 
-            "\nLa multiplicacion es: " + multi +
-            "\nLa division es: " + division 
-        );
+        let n1=Number(prompt('introduce el primer numero'));
+        let n2=Number(prompt('introduce el segundo numero'));
+        suma=n1+n2;
+        document.write("el valor de la suma es "+suma);
+        document.write("<br>")
+        resta=n1-n2;
+        document.write("el valor de la resta es "+resta);
+        document.write("<br>")
+        mult=n1*n2;
+        document.write("el valor de la multiplicacion es "+mult);
+        document.write("<br>")
+        division=n1/n2;
+        document.write("el valor de la division es "+division);
+
     </script>
 </body>
 </html>

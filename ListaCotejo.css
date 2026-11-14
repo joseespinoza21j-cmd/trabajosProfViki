@@ -1,0 +1,115 @@
+/* Lista de Cotejo - Estilos mejorados */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1.5rem 3rem;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: linear-gradient(160deg, #1b1536, #33236b);
+    color: #1a1a2e;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    text-align: center;
+    color: #f3eeff;
+    font-size: clamp(1.4rem, 4vw, 1.9rem);
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    text-align: center;
+    color: #b9aedb;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 1.5rem;
+}
+
+h4 {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    color: #e8e0ff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0.6rem 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 1.5rem auto 0;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+th,
+td {
+    border: 1px solid #d0d5dd;
+    padding: 0.55rem 0.75rem;
+}
+
+th {
+    background-color: #366b9e;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+td {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #1a1a2e;
+}
+
+/* Números de criterio centrados */
+td:first-child {
+    text-align: center;
+    font-weight: 600;
+    width: 50px;
+    background-color: #f5f7fa;
+}
+
+/* Columnas SI / No centradas */
+td:nth-child(3),
+td:nth-child(4) {
+    text-align: center;
+    width: 70px;
+}
+
+/* Filas de sección (A, B, C...) */
+tr td[colspan="4"] {
+    background-color: #D6E7F3;
+    font-weight: 700;
+    color: #2c5282;
+    text-align: left;
+    font-size: 0.95rem;
+    padding: 0.65rem 0.75rem;
+}
+
+/* Hover sutil en filas de criterios */
+tr:not(:first-child):hover td:not([colspan]) {
+    background-color: #f0f4f8;
+}
+
+/* Enlace de regreso al inicio (si se agrega) */
+a {
+    color: #ff8cc6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,126 @@
+:root {
+  --fondo-arriba: #1b1536;
+  --fondo-abajo: #33236b;
+  --tarjeta: #261d4d;
+  --tarjeta-hover: #34286a;
+  --texto: #f3eeff;
+  --gris: #b9aedb;
+  --linea: #4a3d84;
+  --acento: #ff8cc6;
+  --verde: #5fd3a0;
+  --amarillo: #ffc857;
+}
+
+/* ---------- Base de la página ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 2rem 1.25rem 4rem;
+  background: linear-gradient(160deg, var(--fondo-arriba), var(--fondo-abajo));
+  color: var(--texto);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+/* ---------- Encabezado ---------- */
+.encabezado,
+main {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.encabezado {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 7vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.encabezado p {
+  margin: 0;
+  color: var(--gris);
+}
+
+/* ---------- Cada trabajo ---------- */
+.trabajo {
+  display: block;
+  margin-bottom: 0.9rem;
+  /* espacio entre un trabajo y el siguiente */
+  padding: 1.25rem 1.25rem 1.1rem;
+  background: var(--tarjeta);
+  border: 1px solid var(--linea);
+  border-radius: 16px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.trabajo:hover {
+  background: var(--tarjeta-hover);
+  border-color: var(--acento);
+}
+
+.trabajo:focus-visible {
+  outline: 3px solid var(--amarillo);
+  /* borde visible al navegar con el teclado */
+  outline-offset: 2px;
+}
+
+.trabajo h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.trabajo:hover h2 {
+  color: var(--acento);
+}
+
+.trabajo p {
+  margin: 0 0 0.75rem;
+  color: var(--gris);
+}
+
+/* ---------- Etiquetas (HTML, CSS, JavaScript, PHP) ---------- */
+.etiqueta {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.1rem 0.7rem;
+  border: 1px solid var(--linea);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--gris);
+}
+
+/* ---------- Estado del trabajo ---------- */
+.estado {
+  float: right;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.estado::before {
+  content: "";
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.entregado {
+  color: var(--verde);
+}
+
+.en-progreso {
+  color: var(--amarillo);
+}

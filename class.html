@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Class</title>
+    <style>
+        body { font-family: system-ui, sans-serif; padding: 1.5rem; background: #1a1a2e; color: #eee; }
+        a.volver { display: inline-block; margin-bottom: 1rem; padding: 0.4rem 1rem; background: #ff6b6b; color: #fff; border-radius: 999px; text-decoration: none; font-weight: 600; }
+        a.volver:hover { background: #ee5a5a; }
+    </style>
 </head>
 <body>
-   <p id="prueba"></p>
-   <br>
-   <p id="ejemplo"></p>
-   <br>
-   <p id="texto">Soy bien listo</p>
-   <br>
-   <p id="textos">Soy bien chingon</p>
-   <script>
-    let elemento=document.getElementById("prueba");
-    elemento.innerHTML="Aprendiendo metodos de javaScript";
-    
-    var prueba=document.getElementById("ejemplo");
-    prueba.innerHTML="Soy bien flojo";
+    <a class="volver" href="index.html">← Volver al inicio</a>
+    <p id="prueba"></p>
+    <br>
+    <p id="ejemplo"></p>
+    <br>
+    <p id="texto">Soy bien listo</p>
+    <br>
+    <p id="textos">Soy bien chingon</p>
+    <script>
+        let elemento = document.getElementById("prueba");
+        elemento.innerHTML = "Aprendiendo metodos de javaScript";
 
-    let texto=document.querySelector("#texto");
-    texto.style.color="green";
+        var prueba = document.getElementById("ejemplo");
+        prueba.innerHTML = "Soy bien flojo";
 
-    let text=document.querySelector("#textos");
-    text.style.color="blue";
-   </script>
+        let texto = document.querySelector("#texto");
+        texto.style.color = "green";
+
+        let text = document.querySelector("#textos");
+        text.style.color = "blue";
+    </script>
 </body>
 </html>
