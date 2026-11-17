@@ -2,139 +2,145 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trabajos realizados</title>
-  <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MateFácil – Teoremas de Pitágoras y Tales</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">MateFácil</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="teoremaPitagoras.html">Pitágoras</a></li>
+                    <li><a href="teoremaTales.html">Tales</a></li>
+                    <li><a href="curso.html">Inscribirse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header class="encabezado">
-    <h1>Trabajos realizados</h1>
-    <p>-------------------------------------------------------</p>
-  </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenido a MateFácil</h1>
+                <p>Aprende geometría de forma clara, visual y amigable. Elige un teorema y empieza a entenderlo de
+                    verdad.</p>
+            </div>
+        </section>
 
-  <main>
-    <a class="trabajo" href="agregardatos.html">
-      <h2>AGREGAR DATOS</h2>
-      <p>COMO LEER DATOS</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
+        <div class="container">
+            <section>
+                <h2>¿Qué quieres aprender hoy?</h2>
+                <div class="temas-grid">
+                    <article class="card">
+                        <img src="img/PITAGORAS.jpg" alt="Teorema de Pitágoras">
+                        <div class="card-body">
+                            <h3>Teorema de Pitágoras</h3>
+                            <p>Relación entre los lados de un triángulo rectángulo: a² + b² = c².</p>
+                            <a href="teoremaPitagoras.html" class="btn">Estudiar Pitágoras</a>
+                        </div>
+                    </article>
 
-    <a class="trabajo" href="aprobaste.html">
-      <h2>APROBASTE</h2>
-      <p>CODIGO PARA SABER SI APROBASTE O NO</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
+                    <article class="card">
+                        <img src="img/TALES.jpg" alt="Teorema de Tales">
+                        <div class="card-body">
+                            <h3>Teorema de Tales</h3>
+                            <p>Proporcionalidad y semejanza de triángulos. Ideal para calcular alturas.</p>
+                            <a href="teoremaTales.html" class="btn">Estudiar Tales</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-    <a class="trabajo" href="class.html">
-      <h2>CLASS</h2>
-      <p>Uso y ejemplos prácticos de getElementById, innerHTML, querySelector</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
+            <section class="mt-3">
+                <h2>¿No sabes qué estudiar primero?</h2>
+                <p>Compara ambos teoremas de un vistazo:</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Teorema de Tales</th>
+                                <th>Teorema de Pitágoras</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Concepto</td>
+                                <td>Proporcionalidad y semejanza</td>
+                                <td>Relación en triángulos rectángulos</td>
+                            </tr>
+                            <tr>
+                                <td>Fórmula básica</td>
+                                <td>A / a = B / b</td>
+                                <td>a² + b² = c²</td>
+                            </tr>
+                            <tr>
+                                <td>Se aplica en</td>
+                                <td>Triángulos con paralelas</td>
+                                <td>Solo triángulos de 90°</td>
+                            </tr>
+                            <tr>
+                                <td>Uso principal</td>
+                                <td>Alturas y distancias inaccesibles</td>
+                                <td>Distancia diagonal o lado faltante</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-    <a class="trabajo" href="datos.html">
-      <h2>DATOS</h2>
-      <p>Como ingresar datos y visualizarlos por medio de un alert y un prompt</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
+            <section class="mt-3">
+                <h2>Definiciones rápidas</h2>
+                <dl>
+                    <dt>Teorema de Tales</dt>
+                    <dd>Si una recta paralela corta dos lados de un triángulo, los segmentos formados son
+                        proporcionales.</dd>
+                    <dt>Teorema de Pitágoras</dt>
+                    <dd>En todo triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados
+                        de los catetos.</dd>
+                </dl>
+            </section>
 
-    <a class="trabajo" href="datitos.html">
-      <h2>DATITOS</h2>
-      <p>Registrar datos con confirm y mostrarlos en pantalla</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
+            <section class="mt-3">
+                <h2>Fórmulas principales</h2>
+                <ul>
+                    <li><strong>Tales:</strong> AB / BC = A'B' / B'C'</li>
+                    <li><strong>Pitágoras:</strong> a² + b² = c²</li>
+                </ul>
+            </section>
 
-    <a class="trabajo" href="dom.html">
-      <h2>DOM</h2>
-      <p>Uso del DOM - getElementById y estilos</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
+            <section class="mt-3 text-center">
+                <h2>¿Quieres ir más lejos?</h2>
+                <p>Inscríbete a nuestro curso gratuito.</p>
+                <a href="curso.html" class="btn btn-secondary">Inscribirme al curso</a>
 
-    <a class="trabajo" href="ejercicios%20classroom.html">
-      <h2>EJERCICIOS CLASSROOM</h2>
-      <p>Ejercicios con getElementById, querySelector, innerHTML y estilos</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
+                <div class="mt-3">
+                    <h3>Música para estudiar</h3>
+                    <audio id="musicaEstudio" controls preload="metadata">
+                        <source src="videos/musica-estudio.mp3" type="audio/mpeg">
+                        <source src="videos/videoplayback.mp4" type="audio/mp4">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </section>
+        </div>
+    </main>
 
-    <a class="trabajo" href="for.html">
-      <h2>FOR</h2>
-      <p>Ciclos for: contar del 1 al 100 y del 100 al 1</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
+    <footer>
+        <div class="container">
+            <p>© 2026 MateFácil · Aprendizaje de geometría para jóvenes</p>
+        </div>
+    </footer>
 
-    <a class="trabajo" href="funcion.html">
-      <h2>FUNCIÓN</h2>
-      <p>Ejemplos de cómo utilizar una función (13/11/2026)</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
-
-    <a class="trabajo" href="funtion_suma.html">
-      <h2>FUNCIÓN SUMA</h2>
-      <p>Función que recibe dos números y regresa la suma</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
-
-    <a class="trabajo" href="ListaCotejo.html">
-      <h2>LISTA DE COTEJO</h2>
-      <p>Lista de cotejo del proyecto de página web</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">CSS</span>
-    </a>
-
-    <a class="trabajo" href="menuOperaciones.html">
-      <h2>MENÚ OPERACIONES</h2>
-      <p>Menú de operaciones básicas usando Switch</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
-
-    <a class="trabajo" href="operaciones.html">
-      <h2>OPERACIONES</h2>
-      <p>Operaciones básicas de matemáticas</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
-
-    <a class="trabajo" href="operacionesSwitch.html">
-      <h2>OPERACIONES SWITCH</h2>
-      <p>Operaciones básicas usando Switch</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
-
-    <a class="trabajo" href="promedio.html">
-      <h2>PROMEDIO</h2>
-      <p>Determinar el promedio de tres calificaciones</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
-
-    <a class="trabajo" href="signoZodiacal.html">
-      <h2>SIGNO ZODIACAL</h2>
-      <p>Determinar el signo zodiacal usando Switch</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
-
-    <a class="trabajo" href="voto.html">
-      <h2>VOTO</h2>
-      <p>Determinar si puedes votar según tu edad</p>
-      <span class="etiqueta">HTML</span>
-      <span class="etiqueta">JavaScript</span>
-    </a>
-  </main>
+    <script>
+        // Alerta al iniciar la página
+        alert("ya se agregro una alerta !");
+    </script>
 
 </body>
 

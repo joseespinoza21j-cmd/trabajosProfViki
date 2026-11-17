@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teorema de Tales – MateFácil</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">MateFácil</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="teoremaPitagoras.html">Pitágoras</a></li>
+                    <li><a href="teoremaTales.html" class="active">Tales</a></li>
+                    <li><a href="curso.html">Inscribirse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero" style="padding: 1.8rem 1rem; margin-bottom: 1.5rem;">
+                <h1>Teorema de Tales</h1>
+                <p>Proporciones y semejanza de triángulos.</p>
+            </section>
+
+            <section>
+                <h2>Un poco de historia</h2>
+                <p>En el siglo VI a. C., Tales de Mileto midió la altura de la Gran Pirámide usando la proporción de las
+                    sombras. Aplicó la idea de que a la misma hora, la relación entre altura y sombra es constante.</p>
+            </section>
+
+            <section class="mt-3">
+                <h2>La fórmula</h2>
+                <figure>
+                    <img src="img/formulatales.jpg" alt="Fórmula de Tales">
+                    <figcaption>A / a = B / b</figcaption>
+                </figure>
+                <p>Si una recta paralela corta los lados de un triángulo, se forman segmentos proporcionales.</p>
+                <p class="highlight">A / a = B / b</p>
+            </section>
+
+            <!-- CALCULADORA TALES -->
+            <section class="calculadora">
+                <h3>Calculadora de proporciones</h3>
+                <p>Resuelve la proporción: <strong>a / b = c / x</strong></p>
+                <p>Introduce a, b y c. La calculadora te dará el valor de x.</p>
+
+                <div class="calc-row">
+                    <div class="form-group">
+                        <label for="talesA">Valor a</label>
+                        <input type="number" id="talesA" step="any" min="0.1" placeholder="Ej. 2">
+                    </div>
+                    <div class="form-group">
+                        <label for="talesB">Valor b</label>
+                        <input type="number" id="talesB" step="any" min="0.1" placeholder="Ej. 5">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="talesC">Valor c</label>
+                    <input type="number" id="talesC" step="any" min="0.1" placeholder="Ej. 4">
+                </div>
+
+                <button type="button" class="btn" onclick="calcularTales()">Calcular x</button>
+
+                <div id="resultadoTales" class="resultado-calc"></div>
+            </section>
+
+            <section class="mt-3">
+                <h2>Video explicativo</h2>
+                <div class="video-wrapper">
+                    <video controls>
+                        <source src="videos/TEOREMA DE TALES Super facil  - Para principiantes.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p class="mt-2">Créditos: <a href="https://www.youtube.com/@danielcarreon" target="_blank"
+                        rel="noopener">Daniel Carreon</a></p>
+            </section>
+
+            <p class="mt-3"><a href="index.html" class="btn">Volver al menú</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 MateFácil</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
